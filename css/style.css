@@ -509,6 +509,7 @@ color: #fff;
     border-top-left-radius: 18px!important;
     border-top-right-radius: 18px!important;
     border-bottom-right-radius: 18px!important;
+    border-bottom-left-radius: 0px!important;
 }
 /* .steps-div:hover{
     transition: all 0.5s ease-out;
@@ -832,6 +833,7 @@ color: #fff
     }
     .nav-link:hover{
         transform: scale(1);
+        color: #fff !important;
     }
     /* .welcomediv{
         color: white;
@@ -845,9 +847,18 @@ color: #fff
         margin-left: 48px!important;
     }
 
-    .why-info-text{
-        order: 1!important;
+    .why-box img {
+        width: 30%;
     }
+    .why-box h4 {
+        line-height: 20px;
+    }
+    .why-box p {
+        line-height: 20px;
+    }
+    /* .why-info-text{
+        order: 1!important;
+    } */
     .why-info-text h4{
         font-size: 18px;
     }
@@ -860,6 +871,7 @@ color: #fff
         width: 120%!important;
         height: auto!important;
         margin: 0!important;
+        /* margin-top: 50px!important; */
     }
     .second_img{
         height: 1000px!important;
@@ -870,7 +882,6 @@ color: #fff
     .left-about{
         order: 2!important;}
     .left-about img{ 
-        
         margin-left: 15%; 
     }
     .feature{
@@ -927,14 +938,16 @@ color: #fff
         margin-left: 0;
     }
     .navbar{
-        background-color: transparent;
+        background-color: #DAAC48;
     } 
     /* .navbar .navbar-brand img {
         width: 60px;
         height: 60px;
     } */
     .navbar .nav-link{
-        color: #1E3062!important;
+        color: #fff !important;
+        background: linear-gradient(hsl(41, 66%, 57% , 0.2) , hsl(41, 66%, 57% , 0.2) ) ,
+
     }
     .carousel_item_inner{
         margin-right: 0px!important;
