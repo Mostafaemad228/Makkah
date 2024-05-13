@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/png" sizes="57x57" href="images/apple-icon-57x57.png"> -->
+<!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"> -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="css/fontawsome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawsome/solid.min.css">
+    <link rel="stylesheet" href="css/fontawsome/brands.min.css">
+    <!-- plugins -->
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <title> Makkah – Quran Academy  </title>
+  </head>
+  <body>
+   
+   <!-- ? Preloader Start -->
+   <!-- <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text ">
+
+                <svg class="spinner" viewBox="0 0 100 100" height="150px" width="150px">
+                    <clipPath id="clip">
+                        <path d="M 77.831872,66.390587 77.287049,66.429503 77.209217,66.779746 77.325965,67.168906 76.119571,68.297468 75.107757,67.324569 V 67.168906 L 74.40727,67.324569 73.823531,68.025056 73.16196,68.842291 73.317624,69.737357 73.045212,70.788088 71.060499,71.683154 70.360012,70.827004 H 69.114703 V 70.593508 L 68.764459,70.632424 68.842291,71.021583 68.063972,71.683154 H 67.791561 L 67.519149,72.578221 V 73.16196 L 67.052158,73.35654 66.157091,72.850632 65.456605,73.006296 64.600454,72.772801 V 72.461473 L 63.432976,72.733885 63.160564,73.784615 62.070918,74.874261 59.580298,75.535832 59.346803,75.691496 58.801979,75.535832 57.478838,76.002823 57.011846,76.664394 55.9222,77.092469 54.949302,77.792956 53.470496,78.104284 52.225186,78.065368 50.473969,78.1432 49.267575,77.559461 46.738039,76.975722 43.352353,76.158487 40.667153,75.496916 40.12233,75.613664 38.838104,74.874261 37.981954,75.185589 37.125803,75.496916 37.164719,76.002823 37.865206,76.664394 V 77.014638 L 38.87702,77.676208 37.125803,77.209217 36.347484,76.664394 33.545537,75.107757 33.156378,74.679681 30.821421,72.889548 30.782505,73.16196 30.120935,72.383641 27.591399,70.087601 26.774164,68.492048 24.984031,66.857578 24.906199,66.079259 23.349562,63.783219 22.88257,61.409347 22.143168,60.125121 V 59.307887 L 21.131353,57.478838 20.508698,53.470496 20.236287,53.198085 20.58653,49.812398 V 47.555274 L 21.170269,43.780428 21.481597,43.352353 21.792924,41.095229 22.726907,39.577507 22.687991,38.87702 23.816553,37.709542 24.633788,36.425316 25.178611,34.401688 26.073677,32.300227 27.163323,30.74359 28.447549,30.276598 V 29.887439 L 29.342616,29.692859 29.731775,29.3037 29.848523,27.630315 30.626842,26.929828 32.84505,24.984031 35.14109,23.427394 37.865206,22.454495 39.499675,21.909672 40.900649,21.63726 41.717883,21.053521 42.107043,21.014605 43.85826,20.275203 47.243946,20.080623 49.345407,20.391951 49.69565,20.236287 50.512885,21.170269 H 51.874943 L 52.925673,21.325933 53.470496,20.703278 54.560142,20.002791 55.649789,19.652548 55.961116,20.002791 58.840895,20.897858 60.436449,21.209185 61.214767,20.936774 63.004901,22.259915 64.172379,22.804739 66.507335,23.583057 67.947224,25.139695 70.087601,26.423921 71.644238,28.214054 75.068841,32.027815 76.158487,34.28494 77.248133,36.347484 78.610191,39.460759 79.310678,42.184875 79.271762,43.585848 79.466342,45.29815 79.38851,48.683836 79.855501,51.096624 79.660921,51.641447 78.99935,57.867997 79.777669,59.813794 79.622005,61.059104 78.493443,63.666471 78.532359,64.055631 79.933333,65.028529 H 80.594904 L 81.567802,65.378773 H 83.396851 L 81.87913,64.600454 81.645634,63.744303 82.112625,63.082732 82.385037,63.238396 82.92986,62.032002 83.863842,60.942356 83.747094,60.125121 84.758909,60.086205 85.264816,60.164037 85.809639,60.553197 86.66579,61.020188 87.016033,60.786692 87.054949,60.280785 86.354462,59.619214 85.770723,59.969458 85.459396,60.202953 85.070236,59.85271 84.836741,60.047289 83.669263,59.502466 83.902758,59.074391 84.291918,58.763064 84.214086,56.622687 83.163355,55.338461 81.567802,54.637974 81.87913,54.209899 H 82.346121 L 82.813112,51.252288 83.046608,50.979876 82.92986,49.617819 83.630347,48.8395 83.863842,47.59419 84.291918,47.321778 84.603245,47.633106 85.109152,47.321778 84.992404,46.854787 84.719993,46.54346 H 84.447581 L 84.253002,46.387796 84.097338,47.282862 83.824926,47.516358 V 46.582376 L 83.007692,46.193216 82.073709,44.364167 81.801298,44.286335 81.178643,40.667153 80.166828,37.748458 79.155014,35.53025 78.104284,33.312041 76.781142,31.40516 75.65258,29.731775 74.601849,28.25297 72.578221,26.151509 71.566406,24.945115 71.332911,25.139695 69.23145,23.116066 68.920123,23.310646 67.207822,22.337747 65.651184,20.820026 64.016715,20.197371 63.549724,19.73038 62.693573,19.691464 62.109834,19.224472 61.175852,18.796397 59.113307,18.368322 57.984745,17.590003 56.700519,17.23976 56.038948,17.395423 53.62616,16.928432 51.213372,16.500357 49.968062,17.200844 47.282862,17.278676 46.193216,17.706751 43.118857,17.901331 39.849919,19.029893 H 39.344011 L 39.149432,19.34122 36.697728,20.353035 35.180006,21.403765 34.557351,21.481597 34.129276,22.143168 31.521908,23.621973 H 31.171665 L 30.587926,24.283544 29.692859,24.945115 28.992372,24.906199 27.708147,25.412106 27.591399,25.76235 25.956929,27.163323 24.906199,27.474651 23.388478,27.046576 23.310646,28.369717 23.07715,28.992372 23.310646,29.459364 23.777637,29.653943 23.816553,31.210581 22.687991,32.922882 22.143168,33.428789 21.987504,34.246024 H 21.325933 L 20.858942,35.102174 20.703278,35.257838 20.469782,36.347484 20.041707,36.853391 20.508698,37.670626 20.236287,38.332197 19.73038,38.293281 19.613632,38.68244 19.963875,38.87702 18.718565,39.538591 17.823499,40.783901 18.251574,42.068127 18.640733,43.352353 18.562902,44.169587 18.368322,45.142486 18.523986,45.687309 17.706751,48.177929 17.862415,48.683836 17.512171,49.462155 17.590003,53.470496 17.940247,55.883284 18.523986,57.245342 18.757481,57.089678 19.263388,58.763064 19.068809,58.801979 19.302304,59.46355 18.913145,59.268971 18.757481,60.475365 19.146641,62.109834 19.963875,62.421161 20.353035,63.549724 22.298831,66.312755 23.388478,68.219636 24.555956,70.321097 26.540668,71.877734 27.085492,72.150146 27.280071,73.084128 27.708147,73.317624 28.719961,74.21269 30.510094,75.65258 32.105647,76.586562 35.024342,78.610191 35.257838,78.376695 38.526777,79.816585 39.966666,80.63382 40.939565,80.555988 41.756799,81.100811 42.457286,80.906231 44.013924,81.87913 45.414897,81.762382 46.504544,82.190457 47.983349,82.423953 49.072995,82.385037 49.189743,82.5407 51.018792,81.801298 52.419766,81.918045 54.988218,81.061895 56.155696,81.295391 56.817267,80.828399 58.685232,80.166828 63.666471,78.571275 65.767932,78.454527 67.98614,76.353067 69.192534,75.185589 69.153618,75.65258 69.464946,75.963907 70.126517,76.119571 70.515676,75.691496 70.47676,75.068841 70.321097,74.679681 69.62061,74.640765 70.243265,74.173774 71.410743,73.239792 71.488575,72.539305 71.177247,72.383641 71.138331,71.605322 73.239792,70.710256 73.862447,71.410743 74.835345,71.527491 75.691496,71.332911 76.041739,71.138331 76.50873,71.449659 76.781142,71.255079 76.236319,70.67134 76.391983,69.581694 76.469814,68.803375 76.119571,68.219636 77.403797,67.207822 H 77.831872 L 78.065368,66.974326 78.104284,66.74083 Z" />
+                    </clipPath>
+                    <path class="path" clip-path="url(#clip)" d="M 67.757283,59.202113 C 62.675098,69.009189 50.604962,72.839469 40.797887,67.757283 30.990811,62.675098 27.160531,50.604962 32.242717,40.797887 37.324902,30.990811 49.395038,27.160531 59.202113,32.242717 69.009189,37.324902 72.839469,49.395038 67.757283,59.202113" />
+                </svg>
+                
+           </div>
+        </div>
+    </div>
+</div> -->
+<!-- Preloader end -->
+<!--//////////////////////Home Section/////////////////////////// */
+/* //////////////////////Home Section/////////////////////////// */ -->
+<section class="header " id="header">
+  <nav class=" col-lg-12 navbar navbar-expand-lg navbar-dark ftco_navbar p-2   ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images2/logo/logo2.png"  alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""> <i class="fa fa-bars text-dark"></i> </span> 
+      </button>
+      <div class="collapse navbar-collapse ml-auto" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active "><a href="#header" class="nav-link  activelink">Home</a></li>
+          <li class="nav-item"><a href="#!" class="nav-link ">Why Us</a></li>
+          <li class="nav-item"><a href="#!" class="nav-link ">Courses</a></li>
+          <li class="nav-item"><a href="#!" class="nav-link ">Fees</a></li>
+          <li class="nav-item"><a href="#!" class="nav-link ">FAQs</a></li>
+          <li class="nav-item"><a href="#!" class="nav-link ">Contact Us</a></li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+      <div class="container-fluid welcomediv">
+         
+
+        <div class="row mobile-content text-center m-auto p-1 ">
+            <img  class="img-fluid col-lg-12"  src="images2/download.png" alt="">
+            <button class="btn main-btn"> schedual free trail</button>
+        </div>
+
+
+
+
+        <div class="Data-header-container">
+          <div class="  text-center ">
+
+            <div class="   text-center m-auto " >
+              <img class="img-fluid " style="width: 15%;"  src="images2/logo/solo_logo.png" alt="">
+              <p  class="text-dark text-uppercase  barlow-thin pt-1 hi_paragraph">Welcome to </p>
+              <h1 class=" text-dark fw-bolder text-uppercase work-sans" > Makkah Quran Academy </h1>
+              <img src="images2/line.png" style="width: 20%;" class="img-fluid" alt="">
+            </div>
+            
+          </div> 
+          
+          
+            <div class="row">
+              <!--FIRST  -->
+                <div class="col-lg-4 row m-auto">
+                      <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 text-right">
+                          <img style="width: 80%;" src="images2/info/info (1).png" class="img-fluid" alt="">
+                      </div>
+                      <!-- /////////////////////////////////////////// -->
+                        <div class="col-lg-5 col-md-6 col-sm-6 text-right mt-3">
+                              <img style="width: 80%;" src="images2/info/info (4).png" class="img-fluid" alt="">
+                        </div>
+                </div>
+              <!-- SECOND -->
+                <div class="col-lg-4  text-center mt-2">
+                  <!-- <p  class="text-dark text-capitalize  work-sans  w-100" style="font-size: 25px;font-weight: 400;letter-spacing:0px ; "> 
+                    <span style="font-size:32px; font-weight: 600!important;color: #fff; " > learn the quran online </span> <br>
+                    in the way that is engaging , <br>  intresting, and effective 
+                  </p> -->
+                    <img style="width: 110%;" src="images2/text.PNG" class="img-fluid" alt="">
+                </div>
+              <!-- LAST  -->
+                <div class="col-lg-4 row m-auto">
+                  <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 text-right mt-3">
+                      <img style="width: 90%;" src="images2/info/info (3).png" class="img-fluid" alt="">
+                  </div>
+                  <!-- /////////////////////////////////////////// -->
+                    <div class="col-lg-5 col-md-6 col-sm-6 text-right ">
+                          <img style="width: 55%;" src="images2/info/info (2).png" class="img-fluid" alt="">
+                    </div>
+                </div> 
+
+            </div>
+            <div class="text-center mt-4">
+              <button style="width: 300px; background-color: #E7AB19;" class="btn main-btn"> schedual free trail</button>
+            </div>
+        </div>
+      </div>  
+
+
+
+            
+</section>
+
+<!--//////////////////////Home Section/////////////////////////// */
+/* //////////////////////Home Section/////////////////////////// */ -->
+
+
+<!--//////////////////////feature Section/////////////////////////// */
+/* //////////////////////feature Section/////////////////////////// */ -->
+
+<section class="feature   p-3" id="feature">
+
+  <div class="container-fluid text-center">
+    
+    <div class="col-lg-12 m-auto owl-carousel c HowCarsoul" id="HowCarsoul">
+      
+
+    <div class="item">
+      <div class="col-lg-10 col-md-5 col-sm-12 mt-3 mr-5 carousel_item_inner">
+          <a href="">
+            <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C01.png" class="img-fluid" alt="">
+          </a>
+      </div>
+  </div>
+
+  <div class="item">
+    <div class="col-lg-10 col-md-5 col-sm-12 mt-3 mr-5 carousel_item_inner">
+      <a href="">
+        <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C02.png" class="img-fluid" alt="">
+      </a>
+    </div>
+</div>
+
+
+<div class="item">
+  <div class="col-lg-10 col-md-5 col-sm-12 mt-3 mr-5 carousel_item_inner">
+    <a href="">
+      <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C03.png" class="img-fluid" alt="">
+    </a>
+  </div>
+</div>
+
+
+<div class="item">
+  <div class="col-lg-10 col-md-5 col-sm-12 mt-3 mr-5 carousel_item_inner">
+    <a href="">
+      <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C04.png" class="img-fluid" alt="">
+    </a>
+  </div>
+</div> 
+
+<div class="item">
+  <div class="col-lg-10 col-md-5 col-sm-12 mt-3 mr-5 carousel_item_inner">
+    <a href="">
+      <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C05.png" class="img-fluid" alt="">
+    </a>
+  </div>
+</div>
+
+
+<div class="item">
+  <div class="col-lg-10 col-md-5 col-sm-12 mt-3 mr-5 carousel_item_inner">
+    <a href="">
+      <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C06.png" class="img-fluid" alt="">
+    </a>
+  </div>
+</div> 
+      
+      <!-- Third Slide -->
+      <!-- <div class="item">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-12 mt-3">
+            <img style="width: 150%; height: 100%;" src="images2/banner1/MQA-C01.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 p-2 mt-3 feature-photo-div"></div>
+          <div class="col-lg-5 col-md-5 col-sm-12 mt-3">
+            <img style="width: 105%; height: 100%;" src="images2/banner1/MQA-C02.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div> -->
+    </div>
+    
+
+</div>
+
+</section>
+
+<!--//////////////////////feature Section/////////////////////////// */
+/* //////////////////////feature Section/////////////////////////// */ -->
+
+
+
+
+
+
+
+
+
+
+ <!--//////////////////////why Section/////////////////////////// */
+  /* //////////////////////why Section/////////////////////////// */ -->
+  
+  <section class="whyChhose  " id="whyChhose">
+    <div class="text-title mt-5">
+      <h1 class="text-light arima">Why Makkah Quran Academy ?
+      </h1>
+    </div>
+    <div class="container-fluid mt-5">
+            <div class="row ml-auto">
+              <!-- /////////////////////////////////////////////// -->
+     
+            <div  class="col-lg-4 col-md-6 col-sm-12 position-relative ">
+              <div class="left-why  text-left  ">
+                <img style="width: 70%;" class="img-fluid   first_img" src="images2/chose/Site-thumbnail.png" alt="about-photo">
+
+                <!-- <div class="plawVideo" >
+                  <img style="width: 30%;" src="images2/Play-icon.png" class="img-fluid d-inline bg-danger" alt="">
+                  <p class="d-inline bg-light">play now</p>
+                  </div> -->
+                <img style="width: 70%;" class="img-fluid mt-4  second_img" src="images2/chose/Makkah-Banner-website.png" alt="about-photo">
+              </div>
+            </div>
+    
+              <!-- /////////////////////////////////////////////// -->
+                <div  class="col-lg-8 col-md-6 col-sm-12  why-info-text row ">
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/1.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">one to one Online Classes</h4>
+                      <p class=" imprima-regular w-75 ">
+                        We provide one-on-one Online learning sessions to help you and your family to learn more comfortably.
+                      </p>
+                    </div>
+                    
+
+                   <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/2.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Free Trial Classes
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        We offer 3 free trial classes for any course of your choice to evaluate our tutors and courses. #BOOK FREE TRIAL
+                      </p>
+                    </div>
+
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img style="width: 10%;" src="images2/icons/3.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Monthly Reports
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        Including the student’s progress during the month, and the study plan for the next month.
+                      </p>
+                    </div>
+
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/4.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Flexible Timing Schedule
+
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        Choose the most suitable days and times for you and your kids.
+                      </p>
+                    </div>
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/5.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Interactive classes
+                      </h4>
+                      <p style="font-size: 12px;" class=" imprima-regular w-75 ">
+                        In Makkah Quran Academy, we believe in the importance of interactive sessions for learners. It helps learners gain information and apply them in their daily life. Moreover, interactive sessions are more fun and enjoyable compared to traditional training methods.
+                      </p>
+                    </div>
+
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/6.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Enjoyable and exciting activities
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        We in Makkah Quran Academy follow activities methodology in learning Quran, Arabic, and Islamic studies. Activities are meaningful and ensure student development and advancement.
+                      </p>
+                    </div>
+
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/7.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Money-Back Guarantee
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        Get a full refund on canceling during the first week If not satisfied for any reason.
+                      </p>
+                    </div>
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/8.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Recorded Lessons
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        You can also record your lessons and keep them on your own device for revising them whenever and wherever you want.
+                      </p>
+                    </div>
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/9.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        24/7 Support & Schedule
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        24/7 support & flexible schedule at any time of the day.
+                      </p>
+                    </div>
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/10.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Certification on Completion
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        Makkah Quran Academy offer Certification after student complete their courses and this is what makes us proud of our students
+                      </p>
+                    </div>
+
+                    
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/12.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Certified Tutors
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        We are keen on choosing teachers who hold certificates in the subjects they teach.
+                      </p>
+                    </div>
+
+
+                    <div  class="col-lg-6 col-md-6 col-sm-12 m-0 why-box"> 
+                      <img src="images2/icons/11.PNG" class="img-fluid" alt=""> 
+                      <h4 class="imprima-regular-h">
+                        Worldwide Recognized
+                      </h4>
+                      <p class=" imprima-regular w-75 ">
+                        Makkah Quran Academy is serving since 2019 in more than 7 countries of the world including the USA, the UK, Europe, Australia & Canada.
+                      </p>
+                    </div>
+
+
+
+                    
+                  
+                    
+                    
+              </div>
+                  <!-- /////////////////////////////////////////////// -->
+    
+            </div>
+        
+    </div>
+
+            <div class="text-center">
+              <button style="width: 300px; background-color: #E7AB19;" class="btn main-btn"> schedual free trail</button>
+            </div>
+    
+    </section>
+    
+    <!--//////////////////////why Section/////////////////////////// */
+    /* //////////////////////why Section/////////////////////////// */ -->
+
+
+    <!--//////////////////////courses Section/////////////////////////// */
+    /* //////////////////////courses Section/////////////////////////// */ -->
+  
+  <section class="courses  mt-5" id="courses">
+    <div class="text-title mt-5">
+      <h1 class="text-light arima">Our Courses </h1>
+    </div>
+    <div class="container  mt-5">
+      <div class="row m-auto">
+          <!-- ///////////////////////////// -->
+                      
+          <div class="col-lg-4  col-md-6 col-sm-12  main-courses-div">
+            <div class="card w-100">      
+              <div class="  col-lg-12 course-box  m-auto text-left">
+                  <img  src="images2/courses/MQA-C-Kid-1.png" class="img-fluid" alt="">  
+                  <div class="pl-3">
+                    <h4 class="mt-4 imprima-regular-h">
+                      Quran Reading with Tajweed for kids
+                    </h4>
+                    <p class="mt-3 arima">
+                      And basics of arabic & islamic knowledge
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- ///////////////////////////// -->
+              
+          <div class="col-lg-4  col-md-6 col-sm-12  main-courses-div">
+            <div class="card w-100">      
+              <div class="  col-lg-12 course-box  m-auto text-left">
+                  <img  src="images2/courses/MQA-Memori.png" class="img-fluid" alt="">  
+                  <div class="pl-3">
+                    <h4 class="mt-4 imprima-regular-h">
+                      Quran <br> memorization
+                    </h4>
+                    <p class="mt-3 arima">
+                      listen to Quran recitation and translation online
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+            <!-- ///////////////////////////// -->
+                      
+            <div class="col-lg-4  col-md-6 col-sm-12  main-courses-div">
+              <div class="card w-100">      
+                <div class="  col-lg-12 course-box  m-auto text-left">
+                    <img  src="images2/courses/MQA-C-Adult.png" class="img-fluid" alt="">  
+                    <div class="pl-3">
+                      <h4 class="mt-4 imprima-regular-h">
+                        Quran Reading with Tajweed for adults
+                      </h4>
+                      <p class="mt-3 arima">
+                        And basics of arabic & islamic knowledge
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- ///////////////////////////// -->         
+
+
+
+            <div class="col-lg-4  col-md-6 col-sm-12  main-courses-div">
+              <div class="card w-100">      
+                <div class="  col-lg-12 course-box  m-auto text-left">
+                    <img  src="images2/courses/MQA-C-Stud-1.png" class="img-fluid" alt="">  
+                    <div class="pl-3">
+                      <h4 class="mt-4 imprima-regular-h">
+                        Islamic studies
+                      </h4>
+                      <p class="mt-3 arima">
+                        (Hadith – Tafseer – Serah of the prophet-etc.)
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- ///////////////////////////// -->         
+
+            <div class="col-lg-4  col-md-6 col-sm-12  main-courses-div">
+              <div class="card w-100">      
+                <div class="  col-lg-12 course-box  m-auto text-left">
+                    <img  src="images2/courses/MQA-C-Arabic.png" class="img-fluid" alt="">  
+                    <div class="pl-3">
+                      <h4 class="mt-4 imprima-regular-h">
+                        Arabic language
+                      </h4>
+                      <p class="mt-3 arima">
+                        Learn the language of the Holy Quran 
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- ///////////////////////////// -->         
+
+            <div class="col-lg-4  col-md-6 col-sm-12  main-courses-div">
+              <div class="card w-100">      
+                <div class="  col-lg-12 course-box  m-auto text-left">
+                    <img  src="images2/courses/MQA-C-Ijazah.png" class="img-fluid" alt="">  
+                    <div class="pl-3">
+                      <h4 class="mt-4 imprima-regular-h">
+                        Ijazah Certificate
+                      </h4>
+                      <p class="mt-3 arima">
+                        teach and recite the Holy Quran with Tajweed
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- ///////////////////////////// -->         
+
+  
+      </div>
+    </div>
+
+            
+    
+    </section>
+    
+    <!--//////////////////////courses Section/////////////////////////// */
+    /* //////////////////////courses Section/////////////////////////// */ -->
+
+<!--//////////////////////steps Section/////////////////////////// */
+/* //////////////////////steps Section/////////////////////////// */ -->
+<section class="worksteps" id="worksteps">
+  <div class="text-title mt-5">
+    <h1 class="text-light text-uppercase arima">How to learn in 3 steps
+    </h1>
+  </div>
+  <div class="container mt-5">
+    <div class="row m-auto">
+       <!-- ///////////////////////////// -->
+      
+      <!-- ///////////////////////////// -->
+
+        <!-- ///////////////////////////// -->
+                    
+        <div class="col-lg-4 pb-4 col-md-6 col-sm-12 p-2 main-steps-div">
+          <div class="card ">
+                    
+          <div class="5 col-lg-12 steps-div  p-4  m-auto text-center">
+            <img src="images2/icons/fill.svg" width="30%" class="img-fluid" alt="">
+            <div class="steps-box">
+              <h1 class="mt-4 imprima-regular-h">step 1</h1>  
+              <h4 class="mt-4 imprima-regular-h">Fill out the free trial form            </h4>
+              <p class="mt-4 imprima-regular">Simply go to the registration page you can register for free online Quran classes with our online teachers just by filling in your name and contact information </p>
+              <button class="btn main-btn mt-5 mb-2"> Register Now</button>
+
+            </div>
+          </div>
+            </div>
+        </div>
+        <!-- ///////////////////////////// -->
+
+
+
+        <!-- ///////////////////////////// -->
+                    
+        <div class="col-lg-4 pb-4 col-md-6 col-sm-12 p-2 main-steps-div">
+          <div class="card ">
+                    
+            <div class="5 col-lg-12 steps-div  p-4  m-auto text-center">
+                <img src="images2/icons/freetrail.svg" width="30%" class="img-fluid" alt="">
+                <div class="steps-box">
+                  <h1 class="mt-4 imprima-regular-h">Step 2</h1>  
+                  <h4 class="mt-4 imprima-regular-h">take your free trial</h4>
+                  <p class="mt-4 imprima-regular">              Upon receiving your registration, we will contact you back to set your convenient time for the free trial class and connect you with one of our certified teachers. </p>
+                  <button class="btn main-btn mt-5 mb-2"> Download Zoom App</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- ///////////////////////////// -->
+        <!-- ///////////////////////////// -->
+                    
+        <div class="col-lg-4 pb-4 col-md-6 col-sm-12 p-2 main-steps-div">
+          <div class="card ">
+                    
+            <div class="5 col-lg-12 steps-div  p-4  m-auto text-center">
+                <img src="images2/icons/Enroll.svg" width="30%" class="img-fluid" alt="">
+                <div class="steps-box">
+                  <h1 class="mt-4 imprima-regular-h">Step 3</h1>  
+                  <h4 class="mt-4 imprima-regular-h">Monthly Plans</h4>
+                  <p class="mt-4 imprima-regular">After the free trials, choose a monthly plan and get registered for the full course to start your regular classes with our qualified Quran and Arabic M/F teachers</p>
+                  <button class="btn main-btn mt-5 mb-2">Enroll in full course</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- ///////////////////////////// -->        
+
+       <!-- ///////////////////////////// -->
+      
+      <!-- ///////////////////////////// -->
+    </div>
+  </div>
+</section>
+
+
+<!--//////////////////////steps Section/////////////////////////// */
+/* //////////////////////steps Section/////////////////////////// */ -->
+
+
+<!-- bootstrap -->
+<script src="js/bootstrap/jquery-3.5.1.js"></script>
+<script src="js/bootstrap/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- fontawsome -->
+<script src="js/fontawsome/fontawesome.min.js"></script>
+<script src="js/fontawsome/solid.min.js"></script>
+<script src="js/fontawsome/brands.min.js"></script>
+<!-- plugins -->
+<script src="js/plugins/owl.carousel.min.js"></script>
+<script src="js/plugins/countfect.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+<!-- main scripts --> 
+<script src="js/custom.js"></script>
+<script>
+  /* 1. Proloder */
+  $(window).on('load', function () {
+    $('#preloader-active').delay(450).fadeOut('slow');
+    $('body').delay(850).css({
+      'overflow': 'visible'
+    });
+  });
+  ///////////////////////////////////////
+  var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+    // //////////////////////////////////
+//     $('.HowCarsoul').owlCarousel({
+//       stagePadding: 50,
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     dots:false,
+    
+// })
+
+
+
+$(document).ready(function(){
+  $('.HowCarsoul').owlCarousel({
+    rtl: true,
+    loop: true,
+    margin: 0,
+    autoplay: true,
+    smartSpeed: 500,
+    nav: true,
+    dots: true,
+    lazyLoad: true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:2
+      }
+    }
+  });
+});
+
+
+    
+</script>
+</body>
+</html>
