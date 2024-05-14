@@ -891,6 +891,7 @@ color: #fff
     .mobile-content{
         display: block;
     }
+   
     .Data-header-container{
         display: none!important;
     }
@@ -993,7 +994,19 @@ color: #fff
 }
 
 @media screen and (max-width: 767px) {
+    .mobile-img-info-1{
+        width: 40%!important;
+        top: 0 !important;
+        position: relative;
+        left: 0 !important;
+    }
 
+    .mobile-img-info-2{
+        width: 30%!important;
+        top: -50px !important;
+        position: relative;
+        left: -50px !important;
+    }
     /* .welcomediv {
         margin-top:50px ;
     } */
