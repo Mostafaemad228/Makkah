@@ -47,11 +47,11 @@ body::-webkit-scrollbar {
     font-size:40px;
 
  }
-.text-title s{
-    color: #1E3062!important;  
+.text-title h4{
+    color: #ECBA4F!important;  
 
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 33px;
+    font-weight: 600;
  }
 
 
@@ -164,6 +164,13 @@ p{
    border-radius: 8px;
    display: inline-block!important;
 }
+
+.download-btn{
+    background-color: #3E302A;
+    color: #E7AB19;
+    font-weight: 700;
+    border-radius: 8px;
+ }
 
 /* ///////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////// */
@@ -603,21 +610,68 @@ color: #fff;
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
-.download{
+.count{
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 140px!important;
-    background: linear-gradient(rgba(27, 112, 197, 0.8 ) , rgba(27, 112, 197, 0.8) ) ,
-    url(../images/download.jpg) no-repeat  center ;
-    background-size: cover;
+    margin-top: 150px !important;
+    margin-bottom: 150px !important;
 }
-.download-img img {
-    width: 70%;
-    height: auto;
-    margin-top: 30px;
+.countbac{
+    background-color: #fff;
+   
 }
 
+.countbac span{
+    font-size: 59px;
+    color: #483831;
+    font-weight: 900;
+}
+
+.countbac p{
+    font-size: 18px;
+    color: #483831;
+}
+
+.activecount{
+    background-color: #ECBA4F;
+    border-top-left-radius: 18px!important;
+    border-top-right-radius: 18px!important;
+    border-bottom-right-radius: 18px!important;
+    border-bottom-left-radius: 0px!important;
+}
+
+.form_free{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+}
+
+.form_free .container{
+   background-color: #ECBA4F!important;
+   border-top-left-radius: 18px!important;
+   border-top-right-radius: 18px!important;
+   border-bottom-right-radius: 18px!important;
+   border-bottom-left-radius: 0px!important;
+
+}
+.form_free-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 0!important;
+    /* position: relative;
+    left: -57px!important; */
+    border-top-left-radius: 18px!important;
+    border-top-right-radius: 18px!important;
+    border-bottom-right-radius: 18px!important;
+    border-bottom-left-radius: 0px!important;
+}
+.form_free-img h5{
+    font-size: 19px;
+    letter-spacing: 1px;
+}
 .screeoShot-text-info{
     margin-top: 85px!important;
 }
@@ -625,6 +679,15 @@ color: #fff;
 font-size: 50px;}
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 
