@@ -358,6 +358,7 @@ nav.sticky .activelink::after{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;    
+    padding-bottom: 50px;
 
 }
 
@@ -464,6 +465,11 @@ color: #fff;
     width: 100%;
     height: auto;
     position: relative;
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 50px;
 }
 .main-courses-div{
     margin-bottom: 10px;
@@ -501,8 +507,10 @@ color: #fff;
     width: 100%;
     height: auto;
     position: relative;
-    background-color: transparent;
-    /* margin-top:180px!important; */
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 /* .worksteps .container {
     max-width: 1000px!important;
@@ -614,8 +622,13 @@ color: #fff;
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 150px !important;
-    margin-bottom: 150px !important;
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
 }
 .countbac{
     background-color: #fff;
@@ -641,11 +654,22 @@ color: #fff;
     border-bottom-left-radius: 0px!important;
 }
 
+
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
 .form_free{
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 100px;
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 150px;
+
 }
 
 .form_free .container{
@@ -681,6 +705,17 @@ font-size: 50px;}
 /* /////////////////////////////////////////////////////////// */
 
 
+.plans{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 150px;
+
+}
 
 
 
@@ -939,7 +974,7 @@ color: #fff
    
     .Data-header-container{
         display: none!important;
-        
+
     }
     .nav-link:hover{
         transform: scale(1);
