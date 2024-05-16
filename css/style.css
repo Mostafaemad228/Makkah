@@ -561,7 +561,7 @@ color: #fff;
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 
-.gallary{
+/* .gallary{
     width: 100%;
     height: auto;
     position: relative;
@@ -578,14 +578,12 @@ color: #fff;
   }
 
   .swiper-slide {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    //display: flex; align-items: center;justify-content: center;
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-  }
+  } */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
@@ -594,26 +592,35 @@ color: #fff;
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 80px!important;
-    background-color:#fff;
+    padding-top: 80px!important;
+    padding-bottom: 80px!important;
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+.faqs h4 {
+    font-size: 22px;
 }
-.faqs .card {
-    background-color:#fdfdff;
-    border-radius: 0px;
-    border-left:5px solid #5E88FC ;
+.faqs p{
+    font-size: 14px !important;
 }
-.rotate-icon,
+.faqs-white{
+    background-color: #fff;
+    color: #483831;
+
+}
+.faqs-yellow{
+    background-color: #ECBA4F;
+    color: #fff;
+
+}
+/* .rotate-icon,
 .faqs-span{
     font-size: 17px;
     color: #1E3062;
     font-weight: normal;
-}
+} */
 
-.faqs-p{
-    font-size: 15px;
-    color: #1E3062;
-
-}
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
@@ -714,6 +721,7 @@ font-size: 50px;}
     background-repeat: no-repeat;
     background-size: cover; 
     padding-top: 150px;
+    padding-bottom: 100px;
 
 }
 
@@ -729,11 +737,76 @@ font-size: 50px;}
 .testemonials{
     width: 100%;
     height: auto;
-    background-size: cover;
-    margin-top: 180px;
-    padding-bottom: 80px;
+    background-image: url(../images2/unnamed-file.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-.introHeader{
+.testemonials .text-left h2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3E302A;
+}
+.testemonials-div{
+    background-color: #3E302A;
+    border-top-left-radius: 18px!important;
+    border-top-right-radius: 18px!important;
+    border-bottom-right-radius: 18px!important;
+    border-bottom-left-radius: 0px!important;
+}
+
+.testemonials-text h5 {
+    font-size: 20px;
+    color: #E7AB19;
+}
+
+.testemonials-text p {
+    font-size: 17px;
+    color: #fff;
+    text-transform: lowercase !important;
+    font-weight: 600;
+}
+ .fa-star {
+    font-size: 15px;
+    color: #E7AB19;
+    margin-left: -5px;
+}
+
+
+
+.testemonials-banner img {
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+    top: -30px;
+    left: -40px;
+    border-top-left-radius: 18px !important;
+    border-top-right-radius: 18px !important;
+    border-bottom-right-radius: 18px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+
+.users-openions p{
+font-size: 16px;
+}
+.circle {
+    display: inline-block;
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .introHeader{
     margin-top: 100px!important;
 }
 .teste-img{
@@ -774,7 +847,7 @@ font-size: 50px;}
 }
 .jobTitle{
     color: #666666;
-}
+} */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
@@ -822,23 +895,29 @@ font-size: 50px;}
 footer{
     width: 100%;
     height: auto;
-    background:url(../images/footer-bg.jpg.webp) no-repeat center ;
-    background-size: cover;
     position: relative;
 
 }
 
 .f-text  {
-    font-size: 16px;
-    color: #fff;
+    font-size: 11px;
+    color: #483831 !important;
+    line-height: 25px;
+    text-transform: capitalize;
 }
-.f-text span {
-    font-size: 16px!important;
-    color: #fff;  
-}
+
+
+.usefullinks h4 ,
 .footer-title{
-    font-size: 25px;
-    color: #0C2E60;
+    color: #3E302A;
+}
+
+.usefullinks ul a li {
+    list-style: none;
+    color: #E7AB19;
+    font-weight:600;
+    font-size: 21px;
+    margin-top: 10px;
 }
 
 .linksDiv span {
@@ -847,36 +926,10 @@ font-size: 13px;
 }
 .footerSocialIcon{
 font-size: 25px;
-color: #fff
+color: #3E302A
 }
 
 
-.footerinput{
-    width: 80%;
-    height: 50px;
-    background-color: transparent;
-    padding: 15px;
-    outline: none;
-    border: 1px solid #fff;
-
-}
-.footerinput::placeholder{
-    font-size: 15px;
-    color: #fff
-
-}
-.butn5{
-    width: 60px;
-    height: 50px; 
-    background-color: transparent;
-    margin-left: -5px;border-radius:2px ;
-    border: 1px solid #fff;
-}
-
-.rights{
-    background-color: transparent;
-
-}
 
 
 
@@ -1035,7 +1088,20 @@ color: #fff
     .feature-photo-div{
        display: none;
     }
-    
+    .testemonials .text-left  {
+      text-align: center !important;
+    }
+    .testemonials .text-left h2 {
+        top: 0;     
+    }
+    .testemonials-banner img {
+        top: 0;
+        left: 0;
+    }
+
+
+
+
     .swiper {
         width: 180px;
         height: auto;
@@ -1045,24 +1111,15 @@ color: #fff
         height: auto;
     }
 
-    .help,.faqs{
-    margin-top:10px!important;
+   
+    .rowRadius{
+        border-top-left-radius: 18px !important;
+        border-top-right-radius: 18px !important;
+        border-bottom-right-radius: 18px !important;
+        border-bottom-left-radius: 0px !important;
     }
-
-    .screeoShot-text-div{
-        margin-top: -50px!important
-    }
-
-    .screeoShot-text-info h1{
-        font-size: 30px;
-    }
-
-    .screeoShot-text-info {
-        width: 100%!important;   
-    }
-    .screeoShot-text-info p{
-        width: 100%!important;   
-        font-size: 15px;
+    .second-fqs{
+        margin: 0 !important;
     }
     .download-btn{
         margin-top: 10px;
