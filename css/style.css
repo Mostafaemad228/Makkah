@@ -35,8 +35,8 @@ body::-webkit-scrollbar {
   }
    
   body::-webkit-scrollbar-thumb {
-    background-color: #1E3062!important;
-    outline: 1px solid slategrey;
+    background-color: #ECBA4F!important;
+    outline: 1px solid #FFF8EA;
   }
   .text-title{
       font-weight: 700;
