@@ -43,6 +43,35 @@
     </div>
 </div> -->
 <!-- Preloader end -->
+
+
+
+<a href="#header" class="to_up">
+  <img src="images2/to_up.png" class="img-fluid" alt="">
+</a>
+
+<!-- <a href="#header position-fixed" class="to_up2">
+  <img src="images2/to_up.png" class="img-fluid" alt="">
+</a> -->
+
+<div class="whatsapp-button-container">
+  <a href="https://wa.me/01019500346" class="whatsapp-button">
+      <img src="images2/WhatsApp_icon.png" alt="WhatsApp">
+  </a>
+</div>
+
+<div class="massenger-button-container">
+  <a href="https://m.me/yourusername"  class="massenger-button">
+      <img src="images2/messanger.png" alt="massenger">
+  </a>
+</div>
+
+
+
+
+
+
+
 <!--//////////////////////Home Section/////////////////////////// */
 /* //////////////////////Home Section/////////////////////////// */ -->
 <section class="header " id="header">
@@ -55,10 +84,10 @@
       <div class="collapse navbar-collapse ml-auto" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active "><a href="#header" class="nav-link  activelink">Home</a></li>
-          <li class="nav-item"><a href="#!" class="nav-link ">Why Us</a></li>
-          <li class="nav-item"><a href="#!" class="nav-link ">Courses</a></li>
-          <li class="nav-item"><a href="#!" class="nav-link ">Fees</a></li>
-          <li class="nav-item"><a href="#!" class="nav-link ">FAQs</a></li>
+          <li class="nav-item"><a href="#whyChhose" class="nav-link ">Why Us</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link ">Courses</a></li>
+          <li class="nav-item"><a href="#plans" class="nav-link ">Fees</a></li>
+          <li class="nav-item"><a href="#faqs" class="nav-link ">FAQs</a></li>
           <li class="nav-item"><a href="#!" class="nav-link ">Registration</a></li>
           
 
@@ -427,7 +456,7 @@
         
     </div>
 
-            <div class="text-center">
+            <div class="text-center pt-5">
               <button style="width: 300px; background-color: #E7AB19;" class="btn main-btn"> schedual free trail</button>
             </div>
     
@@ -786,7 +815,7 @@
     <h4>30 Minutes Lessons</h4>
   </div>
   <div class="container">
-    <div class="row mb-5">
+    <div class="row mb-5 plans-container">
   
       <div class=" col-lg-3  col-md-6 col-sm-12 p-2 text-center">
         <img class="img-fluid" src="images2/plans/30-2.png" alt="">
@@ -820,7 +849,7 @@
     </div>
 
 
-    <div class="row ">
+    <div class="row plans-container">
   
       <div class=" col-lg-3  col-md-6 col-sm-12 p-2 text-center">
         <img class="img-fluid" src="images2/plans/45-2.png" alt="">
@@ -1191,6 +1220,22 @@
 <!-- main scripts --> 
 <script src="js/custom.js"></script>
 <script>
+
+let to_up = document.querySelector(".to_up")
+
+  // /////////////////////////////////////////
+  window.addEventListener("scroll" , function () {    
+    var navbar =  document.querySelector("nav");
+    navbar.classList.toggle("sticky",window.scrollY >50);
+  })
+  // ///////////////////////////////////////////////////////////// ///////////////////////
+ 
+  window.addEventListener("scroll", function () {
+    to_up.classList.toggle("sticky", window.scrollY > 400);
+  });
+
+
+
   /* 1. Proloder */
   $(window).on('load', function () {
     $('#preloader-active').delay(450).fadeOut('slow');
