@@ -407,10 +407,10 @@ nav.sticky .activelink::after{
     display: none;
 }
 /* //////////////////////*/
-.welcomediv{
+/* .welcomediv{
     color: white;
-    margin-top: 0px;
-}
+    margin-top: -20px;
+} */
 /* .welcomediv s{
     font-size: 12px;
     color: #6E6993;
@@ -469,22 +469,7 @@ nav.sticky .activelink::after{
         margin: 0px;    
     }
     
-    .quick_info h2{
-        color: #1E3062;
-        font-family: 'Special Elite', cursive;
-    }
-
-    .quick_info p{
-        color: #b6b6b6;
-    }
-
-    /* .quick_info:hover {
-        background-color: #FF0000!important;
-        box-shadow: 0px 12px 14px 0px rgba(179,168,168,1);
-    } */
-    .quick_info:hover i,.quick_service:hover h5 {
-       color: #ffff!important;
-    }
+  
     /* //////////////////////////////////////////// */
     /* /////////////////////////////////////////// */
     /* //////////////////////////////////////////// */
@@ -530,6 +515,38 @@ nav.sticky .activelink::after{
     top: 26%;
   }
 
+
+  .position-relative {
+    position: relative;
+    display: inline-block; /* Ensure the container is only as wide as its content */
+}
+
+.first_img {
+    display: block; /* Make sure the image is a block element */
+    width: 100%; /* Ensure it scales to its container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Makes the overlay invisible to mouse events */
+}
+
+.playImg {
+    width: 80px !important; /* You can adjust the size as needed */
+    height: 80px !important; /* You can adjust the size as needed */
+    pointer-events: all; /* Allows the play button to be clickable */
+    cursor: pointer; /* Make it look clickable */
+    position: relative;
+    left: 8%;
+    color: #b9b9b9;
+}
 
 .why-info-text {
     position: relative;
@@ -698,38 +715,6 @@ color: #fff;
 }
 
 
-
-
-/* /////////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////////////////////// */
-
-/* .gallary{
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin-top: 80px!important;
-    background:url(../images/ph/feature.webp) no-repeat center bottom ;
-    background-size: auto 94%;
-    background-color: #5E88FC;    
-}
-
-
-.swiper {
-    width: 240px;
-    height: auto;
-  }
-
-  .swiper-slide {
-    //display: flex; align-items: center;justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-  } */
-/* /////////////////////////////////////////////////////////// */
-/* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////// */
 .faqs{
@@ -1132,6 +1117,26 @@ color: #3E302A
 
 
 
+
+/* * //////////////////////   Other pages   //////////////////// */
+
+.regestration{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    background-image: url(../images2/MQA-Form-B.G-002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+}
+
+
+
+
+
 /* //////////////////////   responsive   //////////////////// */
 /* //////////////////////   responsive   //////////////////// */
 /* //////////////////////   responsive   //////////////////// */
@@ -1176,6 +1181,9 @@ color: #3E302A
     .why-info-text p{
         font-size: 15px;
 
+    }
+    .playImg{
+        left: 0;
     }
      
     
@@ -1223,7 +1231,7 @@ color: #3E302A
 
     }
     .nav-link:hover{
-        transform: scale(1);
+        transform: scale(1)!important;
         color: #fff !important;
     }
     .welcomediv{
@@ -1257,6 +1265,9 @@ color: #3E302A
         font-size: 12px;
         width: 100%!important;
 
+    }
+    .playImg{
+        left: 0;
     }
     .first_img{
         width: 120%!important;
@@ -1393,20 +1404,20 @@ color: #3E302A
 
 @media screen and (max-width: 575px) {
     .mobile-content-img{
-        width: 60% !important;
+        width: 100% !important;
     }
     .mobile-img-info-1 {
-        width: 20% !important;
-        top: 12px !important;
+        width: 33% !important;
+        top: 10px !important;
         position: relative;
-        left: -115px !important;
+        left: -21px !important;
     }
 
     .mobile-img-info-2 {
-        width: 14% !important;
-        top: -25px !important;
+        width: 24% !important;
+        top: -47px !important;
         position: relative;
-        left: -50px !important;
+        left: -60px !important;
     }
 
     .quick_info{
