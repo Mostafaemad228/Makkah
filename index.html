@@ -45,7 +45,8 @@
 </div> -->
 <!-- Preloader end -->
 
-
+<!-- Modal container -->
+<div id="modalContainer"></div>
 
 <a href="#header" class="to_up">
   <img src="images2/to_up.png" class="img-fluid" alt="">
@@ -72,11 +73,10 @@
 
 
 
-
 <!--//////////////////////Home Section/////////////////////////// */
 /* //////////////////////Home Section/////////////////////////// */ -->
 <section class="header " id="header">
-  <nav class=" col-lg-12 navbar navbar-expand-lg navbar-dark ftco_navbar p-2   ftco-navbar-light" id="ftco-navbar">
+  <nav class=" col-lg-12 navbar navbar-expand-lg navbar-dark ftco_navbar p-2 position-fixed  ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="images2/logo/logo2.png"  alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,7 +126,7 @@
           <div class="  text-center ">
 
             <div class="   text-center m-auto " >
-              <img data-aos="zoom-in" data-aos-duration="1500"  data-aos-delay="400" class="img-fluid " style="width: 13%;"  src="images2/logo/solo_logo.png" alt="">
+              <img data-aos="zoom-in" data-aos-duration="1500"  data-aos-delay="400" class="img-fluid " style="width: 10%;"  src="images2/logo/solo_logo.png" alt="">
               <p   data-aos="zoom-in" data-aos-duration="1500"  data-aos-delay="700"  class="text-dark text-uppercase  barlow-thin pt-1 hi_paragraph">Welcome to </p>
               <h1  data-aos="zoom-in" data-aos-duration="1500"  data-aos-delay="1000" class=" text-dark fw-bolder text-uppercase work-sans" > Makkah Quran Academy </h1>
               <img data-aos="zoom-in" data-aos-duration="1500"  data-aos-delay="1200" src="images2/line.png" style="width: 20%;" class="img-fluid" alt="">
@@ -175,7 +175,7 @@
                 </div> 
 
             </div>
-            <div data-aos="fade-up" data-aos-duration="1500"  data-aos-delay="100" class="text-center mt-4 mb-4">
+            <div data-aos="fade-up" data-aos-duration="1500"  data-aos-delay="1400" class="text-center mt-3 mb-4">
               <button  style="width: 300px; background-color: #E7AB19;" class="btn main-btn mb-4"> schedual free trail</button>
             </div>
         </div>
@@ -300,14 +300,17 @@
                 <div class="position-relative">
                   <img data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400" style="width: 70%;" class="img-fluid first_img" src="images2/chose/Site-thumbnail.png" alt="about-photo">
                   <div class="overlay">
-                      <!-- <img src="images2/Play-icon.png" class="img-fluid playImg bg-dark" alt=""> -->
-                      <i  class="fas fa-play-circle playImg"></i>
+                      <i class="fas fa-play-circle playImg" data-toggle="modal" data-target="#videoModal"></i>
                   </div>
               </div>
-              
+            
                 <img data-aos="fade-in" data-aos-duration="1500"  data-aos-delay="800" style="width: 70%;" class="img-fluid mt-4  second_img" src="images2/chose/Makkah-Banner-website.png" alt="about-photo">
               </div>
             </div>
+
+
+
+            
     
               <!-- /////////////////////////////////////////////// -->
                 <div  class="col-lg-8 col-md-6 col-sm-12  why-info-text row ">
@@ -690,96 +693,6 @@
 <!--//////////////////////steps Section/////////////////////////// */
 /* //////////////////////steps Section/////////////////////////// */ -->
 
-<!--//////////////////////form free  Section/////////////////////////// */
-/* //////////////////////form_free  Section/////////////////////////// */ -->
-<section class="form_free" id="form_free">
-
-  <div class="container pb-5">
-    <div class="row p-0">
-  
-      <div class=" col-lg-5  col-md-6 col-sm-12 text-center form_free-img p-0 position-relative ">
-        <img class="img-fluid "src="images2/خيركم-tablet-3.jpg" alt="">
-        <h5  class="imprima-regular-h mt-3">We have Al-Azhar certified teachers who are fluent in English and well trained to teach online</h5>
-      </div>
-      <!-- /////////////////////////////////////// -->
-      <!-- /////////////////////////////////////// -->
-      <!-- /////////////////////////////////////// -->
-      <div style="margin-top: 50px!important;" class="col-lg-6 col-md-6 col-sm-12  mt-5 screeoShot-text-div">
-        <div class="innerFreeForm ">
-          <div class="text-center">
-            <h2 class="barlow-thin fw-bolder ">Get 2 days </h2>
-            <h1 class="fw-bolder imprima-regular-h">free classes</h1>
-          </div>
-          <form>
-            <div class="row text-left">
-                <div class="col-lg-12 mt-4">
-                  <label for="">Name *</label>
-                    <input type="text" class="form-control col-lg-12 mr-auto" placeholder="Your Name">
-                </div>
-
-                <div class="col-lg-12 mt-4">
-                  <label for="">Email *</label>
-                    <input type="email" class="form-control col-lg-12 mr-auto" placeholder="Your Email">
-                </div>
-  
-                <div class="col-lg-12 mt-4">
-                  <label for="">Time *</label>
-                    <!-- <input type="s"  placeholder="Your Email"> -->
-                    <select class="form-control col-lg-12 mr-auto" name="" id="">
-                      <option value="">classes / monthes</option>
-                      <option value="">8 classes/month</option>
-                      <option value="">12 classes/month</option>
-                      <option value="">16 classes/month</option>
-                      <option value="">20 classes/month</option>
-                    </select>
-                </div>
-
-                <div class="col-lg-12 mt-4">
-                  <label for="">Classes Duration *</label>
-                  <br>
-
-                    <input type="radio" id="contactChoice1" name="contact" value="duration1" />
-                    <label for="contactChoice1">30 mins</label>
-              
-                    <input type="radio" id="contactChoice2" name="contact" value="duration2" />
-                    <label for="contactChoice2">40 mins</label>
-              
-                </div>
-
-                <div class="col-lg-12 ">
-                  <label for="">Phone *</label>
-                    <input type="Phone" class="form-control col-lg-12 mr-auto" placeholder="Your Phone">
-                </div>
-
-                <div class="col-lg-12 mt-4">
-                  <label for="">Nationality *</label>
-                    <!-- <input type="s"  placeholder="Your Email"> -->
-                    <select class="form-control col-lg-12 mr-auto" name="" id="">
-                      <option value="">Choose Your Nationality </option>
-                      <option value=""> Nationality 1</option>                      
-                      <option value=""> Nationality 1</option>                      
-                      <option value=""> Nationality 1</option>                      
-                      <option value=""> Nationality 1</option>                      
-                      <option value=""> Nationality 1</option>                      
-                      <option value=""> Nationality 1</option>                      
-                    </select>
-                </div>
-                
-                 <div class="col-lg-12 mt-3">
-                    <button type="submit" class=" btn download-btn " style="background-color: #3E302A!important;color: #EBE6E2; " > submit </button>
-                </div>
-            </div>
-  
-        </form>
-        </div>
-      </div>
-  
-    </div>
-  </div>
-  </section>
-
-  <!--//////////////////////form free  Section/////////////////////////// */
-/* //////////////////////form free  Section/////////////////////////// */ -->
 
 
   <!--////////////////////// count  Section/////////////////////////// */
@@ -836,25 +749,30 @@
   
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="200" class=" col-lg-3  col-md-6 col-sm-12 p-2 text-center">
         <img class="img-fluid" src="images2/plans/30-2.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4" style= > Registration </button>
-
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
 
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="400" class="col-lg-3 col-md-6 col-sm-12 p-2 text-center">
         <img class="img-fluid" src="images2/plans/30-3.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
-
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
   
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="600" class="col-lg-3 col-md-6 col-sm-12 p-2 text-center"> 
         <img class="img-fluid" src="images2/plans/30-4.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
-
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
   
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="800" class="col-lg-3 col-md-6 col-sm-12 p-2 text-center"> 
         <img class="img-fluid" src="images2/plans/MQA-Price-30min-5-classes.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
   
     </div>
@@ -870,25 +788,30 @@
   
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1000" class=" col-lg-3  col-md-6 col-sm-12 p-2 text-center">
         <img class="img-fluid" src="images2/plans/45-2.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
-
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
 
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1200" class="col-lg-3 col-md-6 col-sm-12 p-2 text-center">
         <img class="img-fluid" src="images2/plans/45-3.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
-
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
   
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1400" class="col-lg-3 col-md-6 col-sm-12 p-2 text-center"> 
         <img class="img-fluid" src="images2/plans/PP-02.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
-
+        <a href="registration.html"> 
+          <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+        </a>
       </div>
   
       <div data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1600" class="col-lg-3 col-md-6 col-sm-12 p-2 text-center"> 
         <img class="img-fluid" src="images2/plans/45-5.png" alt="">
-        <button class=" btn download-btn pl-4 pr-4"  > Registration </button>
+          <a href="registration.html"> 
+            <button class=" btn download-btn pl-4 pr-4"  > Registration </button>  
+          </a>
       </div>
   
     </div>
@@ -909,22 +832,24 @@
       <!-- /////////////////////////////////////// -->
       <!-- /////////////////////////////////////// -->
       <div data-aos="fade-down" data-aos-duration="3000"  data-aos-delay="1000" class="col-lg-8 col-md-12 col-sm-12  mt-5 ">
-        <div class="testemonials-div  position-relative row ">
-              <div class="position-relative testemonials-banner col-lg-5 cpl-md-5 col-sm-12 p-0">
-                <img src="images2/testemonials/teste.jpg" alt="">
-              </div>
-
-              <div class="testemonials-text col-lg-6 cpl-md-6 col-sm-12 pt-5 pb-5">
-                <h5 class="imprima-regular-h">Your Own Personal Teacher Live Online Classes</h5>
-                <p class="mt-5">“I don’t mind to write a feed back.Choosing a Makkah Quran Academy is really a good choice I got really a good teacher’s both of which I’m appreciative off.I progressed myself.My son he has a good teacher as well.”</p>
-                <p>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-              </div>
+        <div class="testemonials-div   row ">
+              <!-- <div class="row"> -->
+                <div class="position-relative testemonials-banner col-lg-5 cpl-md-5 col-sm-12 p-0">
+                  <img src="images2/testemonials/teste.jpg" alt="">
+                </div>
+  
+                <div class="testemonials-text col-lg-6 col-md-6 col-sm-12  pt-5 pb-5">
+                  <h5 class="imprima-regular-h">Your Own Personal Teacher Live Online Classes</h5>
+                  <p class="mt-5">“I don’t mind to write a feed back.Choosing a Makkah Quran Academy is really a good choice I got really a good teacher’s both of which I’m appreciative off.I progressed myself.My son he has a good teacher as well.”</p>
+                  <p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </p>
+                </div>
+              <!-- </div> -->
         </div>
       </div>
   
@@ -1215,6 +1140,7 @@
     </div>
   </footer>
   
+  <!-- <video src=""></video> -->
   <!--//////////////////////footer Section/////////////////////////// */
   /* //////////////////////footer Section/////////////////////////// */ -->
 
@@ -1327,6 +1253,39 @@ $(document).ready(function(){
   });
 });
 
+document.querySelector('.playImg').addEventListener('click', function() {
+        // Create modal HTML
+        const modalHTML = `
+            <div style="z-index:11111111111" class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div  class="modal-dialog modal-xl " role="document">
+                    <div class="modal-content m-0 p-0" style="background-color:#000 !important;margin:0px !important;padding:0px !important">
+                        
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video width="100%" height="100%" controls autoplay id="modalVideo">
+                                    <source src="images2/1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        // Append modal to container
+        document.getElementById('modalContainer').innerHTML = modalHTML;
+
+        // Show the modal
+        $('#videoModal').modal('show');
+
+        // Add event listener to stop video when modal is closed
+        $('#videoModal').on('hide.bs.modal', function () {
+            const video = document.getElementById('modalVideo');
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
 
     
 </script>
