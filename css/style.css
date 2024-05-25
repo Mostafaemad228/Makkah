@@ -323,7 +323,7 @@ p{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(../images2/bac.jpeg);
+    background-image: url(../images2/bac2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -331,7 +331,7 @@ p{
 }   
 
 .navbar{
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 20px 5px;
     z-index: 11;
     position: relative;
@@ -373,15 +373,15 @@ nav .navbar-brand img{
 }
 
 /* ////////////////////// */
-/* nav.sticky {
-    background-color: #fff!important;
+nav.sticky {
+    background-color: #DAAC48!important;
     transition: 0.5s!important;
     z-index: 1111;
     opacity: 1!important;
     padding: 0px 15px!important;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-nav.sticky .navbar-brand img{
+/* nav.sticky .navbar-brand img{
 width: 100%;
 height: 50px;
     transition: 0.5s!important;
@@ -407,10 +407,12 @@ nav.sticky .activelink::after{
     display: none;
 }
 /* //////////////////////*/
-/* .welcomediv{
+.welcomediv{
     color: white;
-    margin-top: -20px;
-} */
+    margin-top: 100px;
+}
+
+
 /* .welcomediv s{
     font-size: 12px;
     color: #6E6993;
@@ -893,6 +895,7 @@ font-size: 50px;}
     border-top-right-radius: 18px!important;
     border-bottom-right-radius: 18px!important;
     border-bottom-left-radius: 0px!important;
+    
 }
 
 .testemonials-text h5 {
@@ -917,7 +920,7 @@ font-size: 50px;}
 .testemonials-banner img {
     width: 100%;
     height: 100% !important;
-    position: relative;
+    position: relative !important;
     top: -30px;
     left: -40px;
     border-top-left-radius: 18px !important;
@@ -1355,14 +1358,14 @@ color: #3E302A
         position: relative;
         left: -65px !important;
     }
-    /* .welcomediv {
-        margin-top:50px ;
-    } */
+    .welcomediv {
+        margin-top:80px !important;
+    }
     .nav-btn{
         margin-left: 0;
     }
     .navbar{
-        background-color: #DAAC48;
+        background-color: #DAAC48 !important;
     }
     .main-btn{
         width: 50%;
