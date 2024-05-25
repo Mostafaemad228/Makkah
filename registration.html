@@ -24,6 +24,21 @@
     <title> Makkah – Quran Academy  </title>
   </head>
   <body>
+
+    <style>
+      .lablefeild{
+        color:#3E302A !important;
+        font-family: "Imprima", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      input::placeholder{
+        color:#5f4e47 !important;
+        font-family: "Imprima", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
    
    <!-- ? Preloader Start -->
    <!-- <div id="preloader-active">
@@ -147,7 +162,7 @@
                     </div>
 
                     <div class="col-lg-12 mt-4">
-                        <label for="">Preferred Teacher Gender</label>
+                        <label class="lablefeild" for="">Preferred Teacher Gender</label>
                         <br>
                         <input class="" type="checkbox" id="gendr1" name="gendr" value="maletutor" />
                         <label class="ml-2 mt-2" for="gendr1">male Tutor</label>
@@ -159,7 +174,7 @@
 
 
                     <div class="col-lg-12 mt-4">
-                        <label for="">Teacher Language *</label>
+                        <label class="lablefeild" for="">Teacher Language *</label>
                         <br>
       
                           <input type="radio" id="language1" name="language" value="language1" />
@@ -176,7 +191,7 @@
                     
       
                     <div class="col-lg-12 mt-4">
-                      <label for="">Time *</label>
+                      <label class="lablefeild" for="">Time *</label>
                         <!-- <input type="s"  placeholder="Your Email"> -->
                         <select class="form-control col-lg-12 mr-auto" name="" id="">
                           <option value="">Choose Course</option>
@@ -190,10 +205,10 @@
 
 
                     <div class="col-lg-12 mt-4">
-                        <label for="">Time *</label>
+                        <label class="lablefeild" for="">How many classes per week? *</label>
                           <!-- <input type="s"  placeholder="Your Email"> -->
                           <select class="form-control col-lg-12 mr-auto" name="" id="">
-                            <option value="">How many classes per week? *</option>
+                            <option value=""> classes per week? *</option>
                             <option value=""> 2 per week</option>
                             <option value=""> 3 per week</option>
                             <option value=""> 4 per week</option>
@@ -202,7 +217,7 @@
                       </div>
     
                     <div class="col-lg-12 mt-4">
-                      <label for="">Classes Duration *</label>
+                      <label class="lablefeild" for="">Classes Duration *</label>
                       <br>
     
                         <input type="radio" id="duration1" name="duration" value="duration1" />
@@ -211,25 +226,6 @@
                         <input type="radio" id="duration2" name="duration" value="duration2" />
                         <label for="duration2">40 mins</label>
                   
-                    </div>
-    
-                    <div class="col-lg-12 ">
-                      <label for="">Phone *</label>
-                        <input type="Phone" class="form-control col-lg-12 mr-auto" placeholder="Your Phone">
-                    </div>
-    
-                    <div class="col-lg-12 mt-4">
-                      <label for="">Nationality *</label>
-                        <!-- <input type="s"  placeholder="Your Email"> -->
-                        <select class="form-control col-lg-12 mr-auto" name="" id="">
-                          <option value="">Choose Your Nationality </option>
-                          <option value=""> Nationality 1</option>                      
-                          <option value=""> Nationality 1</option>                      
-                          <option value=""> Nationality 1</option>                      
-                          <option value=""> Nationality 1</option>                      
-                          <option value=""> Nationality 1</option>                      
-                          <option value=""> Nationality 1</option>                      
-                        </select>
                     </div>
 
                     <div class="col-lg-12 mt-4">
@@ -241,10 +237,9 @@
                     </div>
                     
                     <div class="col-lg-12 mt-4">
-                        <label for="">Nationality *</label>
+                        <label class="lablefeild" for="">How did you know about us? *</label>
                           <!-- <input type="s"  placeholder="Your Email"> -->
                           <select class="form-control col-lg-12 mr-auto" name="" id="">
-                            <option value="">How did you know about us? </option>
                             <option value=""> google </option>                      
                             <option value=""> facebook </option>                      
                             <option value=""> Other </option>                      
@@ -256,7 +251,7 @@
                     
 
                       <div class="col-lg-12 mt-4">
-                        <label for="">Is there any family member or a friend you can recommend?</label>
+                        <label class="lablefeild" for="">Is there any family member or a friend you can recommend?</label>
                         <br>
       
                           <input type="radio" id="chooseYES" name="choose" value="chooseYES" />
@@ -269,12 +264,12 @@
 
                       
                       <div class="col-lg-12 mt-4">
-                        <label for="">Could you share your friend whatsapp number ?</label>
+                        <label class="lablefeild" for="">Could you share your friend whatsapp number ?</label>
                         <input type="text" class="form-control col-lg-12 mr-auto" placeholder="3rd student's Name *">
                       </div>
 
                       <div class="col-lg-12 mt-4">
-                        <label for="">Any Comments</label>
+                        <label class="lablefeild" for="">Any Comments</label>
                         <input type="email" class="form-control col-lg-12 mr-auto" placeholder="2nd student's Name Age *">
                       </div>
                     
