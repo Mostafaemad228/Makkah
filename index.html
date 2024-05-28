@@ -189,6 +189,43 @@
 <!--//////////////////////Home Section/////////////////////////// */
 /* //////////////////////Home Section/////////////////////////// */ -->
 
+<!--//////////////////////videos Section/////////////////////////// */
+/* //////////////////////videos Section/////////////////////////// */ -->
+<section class="Videos">
+  <div class="container mt-5">
+    <div class="text-title mt-5">
+      <h1 class="text-center arima">see videos about us?
+      </h1>
+    </div>
+    <div class="row about-inner">
+            <div class="col-lg-10 m-auto photoSection pb-5" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+                <!-- <img class="img-fluid "   src="images/Me/me.jpg" alt=""> -->
+                
+                <video class="d-block bigPhoto " width="100%" height="100%" controls autoplay id="modalVideo">
+                  <source class="bigPhoto" src="images2/video/1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+                <div class="text-center">
+                  <div class="imageGroup d-flex ">
+                    <img src="./images2/courses/MQA-C-Adult.png" class="img-fluid mt-2  smallPhoto"  alt="my_photo" data-video-src="images2/video/1.mp4">
+                    <img src="./images2/courses/MQA-C-Arabic.png" class="img-fluid mt-2 smallPhoto"  alt="my_photo" data-video-src="images2/video/7.mp4">
+                    <img src="./images2/courses/MQA-C-Kid-1.png" class="img-fluid mt-2 smallPhoto"  alt="my_photo" data-video-src="images2/video/choose.mp4">
+                    <img src="./images2/courses/MQA-C-Adult.png" class="img-fluid mt-2 smallPhoto"  alt="my_photo" data-video-src="images2/video/courses.mp4">
+                    <img src="./images2/courses/MQA-Memori.png" class="img-fluid mt-2 smallPhoto"  alt="my_photo" data-video-src="images2/video/footer.mp4">        
+                  </div>
+                </div>
+                
+            </div>
+
+        
+        <!-- ? ////////////////////////////////////////////////////////////////////// -->
+    </div>
+</div>
+</section>
+<!--//////////////////////videos Section/////////////////////////// */
+/* //////////////////////videos Section/////////////////////////// */ -->
+
 
 <!--//////////////////////feature Section/////////////////////////// */
 /* //////////////////////feature Section/////////////////////////// */ -->
@@ -272,14 +309,6 @@
 
 <!--//////////////////////feature Section/////////////////////////// */
 /* //////////////////////feature Section/////////////////////////// */ -->
-
-
-
-
-
-
-
-
 
 
  <!--//////////////////////why Section/////////////////////////// */
@@ -1287,6 +1316,23 @@ document.querySelector('.playImg').addEventListener('click', function() {
         });
     });
 
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+            const videoElement = document.getElementById('modalVideo');
+            const smallPhotos = document.querySelectorAll('.smallPhoto');
+
+            smallPhotos.forEach(photo => {
+                photo.addEventListener('click', function () {
+                    const newSrc = this.getAttribute('data-video-src');
+                    const sourceElement = videoElement.querySelector('source');
+                    sourceElement.setAttribute('src', newSrc);
+                    videoElement.load();
+                });
+            });
+        });
     
 </script>
 </body>
