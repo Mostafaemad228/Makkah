@@ -1275,6 +1275,10 @@ color: #3E302A
         display: none!important;
 
     }
+    nav {
+        background-color: #E7AB19 !important;
+ 
+       }
     .nav-link:hover{
         transform: scale(1)!important;
         color: #fff !important;
