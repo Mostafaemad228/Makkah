@@ -1455,14 +1455,18 @@ color: #3E302A
      }
      
      .smallPhoto{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         margin-left: 20px !important;
         margin-top: 10px !important;
     }
 }
 
 @media screen and (max-width: 575px) {
+    .header{
+        /* background-size: contain !important; */
+        background-position: left top;
+    }
     .mobile-content-img{
         width: 100% !important;
     }
@@ -1483,6 +1487,11 @@ color: #3E302A
     .quick_info{
         width: 33.333%!important;
     }
+    .smallPhoto {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 @media screen and (max-width: 362px) {
