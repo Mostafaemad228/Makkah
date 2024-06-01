@@ -1464,9 +1464,10 @@ color: #3E302A
 
 @media screen and (max-width: 575px) {
     .header{
-        /* background-size: contain !important; */
-        background-position: left top;
+        background-image: url(../images2/bac.jpeg) !important;
+        background-position: center center !important;
     }
+    
     .mobile-content-img{
         width: 100% !important;
     }
