@@ -1464,7 +1464,7 @@ color: #3E302A
 
 @media screen and (max-width: 575px) {
     .header{
-        background-image: url(../images2/bac.jpeg) !important;
+        background-image: url("../images2/MQA-Mobile-B.G.jpg") !important;
         background-position: center center !important;
     }
     
