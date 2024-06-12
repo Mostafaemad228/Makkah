@@ -92,12 +92,12 @@
             <span class=""> <i class="fa fa-bars text-dark"></i> </span> 
           </button>
           <div class="collapse navbar-collapse ml-auto" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active "><a href="index.html" class="nav-link  activelink">Home</a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link ">Why Us</a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link ">Courses</a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link ">Fees</a></li>
-              <li class="nav-item"><a href="index.html" class="nav-link ">FAQs</a></li>
+           <ul class="navbar-nav ml-auto">
+              <li class="nav-item active "><a href="#header" class="nav-link  activelink">Home</a></li>
+              <li class="nav-item"><a href="#whyChhose" class="nav-link ">Why Us</a></li>
+              <li class="nav-item"><a href="#courses" class="nav-link ">Courses</a></li>
+              <li class="nav-item"><a href="#plans" class="nav-link ">Fees</a></li>
+              <li class="nav-item"><a href="#faqs" class="nav-link ">FAQs</a></li>
               <li class="nav-item"><a href="registration.html" class="nav-link ">Registration</a></li>
               
     
@@ -277,23 +277,23 @@
             <div data-aos="fade-in" data-aos-duration="1000"  data-aos-delay="400" class="col-lg-4 col-md-4 col-sm-12 text-center mt-3 usefullinks">
                 <h4   class="mt-5 imprima-regular-h " >Useful links</h4>
                 <ul>
-                  <a href="">
+                  <a href="#whyChhose">
                     <li class="imprima-regular-h">Why Us</li>
                   </a> 
 
-                  <a href="">
+                  <a href="#courses">
                     <li class="imprima-regular-h">Courses</li>
                   </a> 
 
-                  <a href="">
+                  <a href="#plans">
                     <li class="imprima-regular-h">Fees</li>
                   </a> 
 
-                  <a href="">
+                  <a href="#faqs">
                     <li class="imprima-regular-h">FAQs</li>
                   </a> 
 
-                  <a href="">
+                  <a href="registration.html">
                     <li class="imprima-regular-h">Contact Us</li>
                   </a> 
                 
@@ -396,6 +396,25 @@ document.getElementById('add-student').addEventListener('click', function() {
             document.getElementById('additional-students').appendChild(studentInfo);
         });
 
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href');
+
+      if (targetId.startsWith('#')) {
+        const targetSection = targetId.substring(1);
+        window.location.href = `index.html#${targetSection}`;
+      } else {
+        window.location.href = targetId;
+      }
+    });
+  });
+});
     
 </script>
 </body>
