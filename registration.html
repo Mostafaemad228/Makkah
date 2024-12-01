@@ -62,9 +62,9 @@
 
 
 
-<a href="#header" class="to_up">
+<!-- <a href="#header" class="to_up">
   <img src="images2/to_up.png" class="img-fluid" alt="">
-</a>
+</a> -->
 
 <!-- <a href="#header position-fixed" class="to_up2">
   <img src="images2/to_up.png" class="img-fluid" alt="">
@@ -183,29 +183,29 @@
                     </select>
                 </div>
 
+                <!-- More Course Details -->
                 <div class="col-lg-12 mt-4">
-                    <label class="lablefeild" for="">How many classes per week? *</label>
-                    <select class="form-control col-lg-12 mr-auto">
-                        <option value="">Classes per week? *</option>
-                        <option value="">2 per week</option>
-                        <option value="">3 per week</option>
-                        <option value="">4 per week</option>
-                        <option value="">5 per week</option>
-                    </select>
+                  <label>How many classes per week? *</label>
+                  <select class="form-control" id="classes-per-week" required>
+                    <option value="">Classes per week?</option>
+                    <option value="2">2 per week</option>
+                    <option value="3">3 per week</option>
+                    <option value="4">4 per week</option>
+                    <option value="5">5 per week</option>
+                  </select>
                 </div>
 
                 <div class="col-lg-12 mt-4">
-                    <label class="lablefeild" for="">Classes Duration *</label>
-                    <br>
-                    <input type="radio" id="duration1" name="duration" value="duration1">
-                    <label for="duration1">30 mins</label>
-                    <input type="radio" id="duration2" name="duration" value="duration2">
-                    <label for="duration2">40 mins</label>
+                  <label>Classes Duration *</label><br>
+                  <input type="radio" id="duration1" name="duration" value="30 mins" required>
+                  <label for="duration1">30 mins</label>
+                  <input type="radio" id="duration2" name="duration" value="45 mins" class="ml-4">
+                  <label for="duration2">45 mins</label>
                 </div>
 
                 <div class="col-lg-12 mt-4">
-                    <h5 class="lablefeild">Total: 8 classes /month (4 hours)</h5>
-                    <h6 class="lablefeild">Price: $35.00 per student</h6>
+                  <h5 id="total-classes">Total: 8 classes/month (4 hours)</h5>
+                  <h6 id="price">Price: $35.00 per student</h6>
                 </div>
 
                 
@@ -416,6 +416,59 @@ document.getElementById('add-student').addEventListener('click', function() {
   });
 });
     
+
+
+
+document.getElementById('classes-per-week').addEventListener('change', updatePricing);
+    document.querySelectorAll('input[name="duration"]').forEach((input) => {
+      input.addEventListener('change', updatePricing);
+    });
+
+    function updatePricing() {
+      var classesPerWeek = parseInt(document.getElementById('classes-per-week').value);
+      var selectedDuration = document.querySelector('input[name="duration"]:checked');
+      if (!classesPerWeek || !selectedDuration) return;
+
+      var totalClasses, totalPrice;
+      
+      if (selectedDuration.value === "30 mins") {
+
+       if (classesPerWeek === 2) {
+          totalClasses = 8;
+          totalPrice = 35;
+        } else if (classesPerWeek === 3) {
+          totalClasses = 12;
+          totalPrice = 50;
+        } else if (classesPerWeek === 4) {
+          totalClasses = 16;
+          totalPrice = 65;
+        } else if (classesPerWeek === 5) {
+          totalClasses = 20;
+          totalPrice = 75;
+        }
+      } else if (selectedDuration.value === "45 mins") {
+
+        if (classesPerWeek === 2) {
+          totalClasses = 8;
+          totalPrice = 50;
+        } else if (classesPerWeek === 3) {
+          totalClasses = 12;
+          totalPrice = 70;
+        } else if (classesPerWeek === 4) {
+          totalClasses = 16;
+          totalPrice = 90;
+        } else if (classesPerWeek === 5) {
+          totalClasses = 20;
+          totalPrice = 100;
+        }
+      }
+
+      var totalHours = totalClasses * (selectedDuration.value === "30 mins" ? 0.5 : 0.75); 
+      document.getElementById('total-classes').innerHTML = `Total: ${totalClasses} classes/month (${totalHours} hours)`;
+      document.getElementById('price').innerHTML = `Price: $${totalPrice} per student`;
+    }
+
+
 </script>
 </body>
 </html>
